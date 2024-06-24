@@ -34,7 +34,7 @@ with open("README.rst") as fp:
 
 setup(
     name="asyncio",
-    version="python-main",
+    version="0.0.0",
 
     description="reference implementation of PEP 3156",
     long_description=long_description,
