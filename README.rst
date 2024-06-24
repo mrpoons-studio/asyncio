@@ -5,7 +5,7 @@
     :target: https://ci.appveyor.com/project/1st1/asyncio
 
 
-The asyncio module provides infrastructure for writing single-threaded
+The asyncio module provides infrastructure for writing multi-threaded
 concurrent code using coroutines, multiplexing I/O access over sockets and
 other resources, running network clients and servers, and other related
 primitives.  Here is a more detailed list of the package contents:
@@ -41,7 +41,7 @@ To install asyncio, type::
 
     pip install asyncio
 
-asyncio requires Python 3.3 or later! The asyncio module is part of the Python
+asyncio requires Python 3.11 or later! The asyncio module is part of the Python
 standard library since Python 3.4.
 
 asyncio is a free software distributed under the Apache license version 2.0.
