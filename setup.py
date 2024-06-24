@@ -19,8 +19,8 @@ except ImportError:
     # We won't be able to build the Wheel file on Windows.
     from distutils.core import setup, Extension
 
-if sys.version_info < (3, 3, 0):
-    raise RuntimeError("asyncio requires Python 3.3.0+")
+if sys.version_info < (3, 11, 0):
+    raise RuntimeError("asyncio requires Python 3.12.0+")
 
 extensions = []
 if os.name == 'nt':
@@ -34,7 +34,7 @@ with open("README.rst") as fp:
 
 setup(
     name="asyncio",
-    version="3.4.4",
+    version="python-main",
 
     description="reference implementation of PEP 3156",
     long_description=long_description,
@@ -43,7 +43,10 @@ setup(
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
     ],
 
     packages=["asyncio"],
