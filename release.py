@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Script to upload 32 bits and 64 bits wheel packages for Python 3.3 on Windows.
+Script to upload 64 bits wheel packages for Python 3.12 on Windows.
 
 Usage: "python release.py HG_TAG" where HG_TAG is a Mercurial tag, usually
 a version number like "3.4.2".
 
 Requirements:
 
-- Python 3.3 and newer requires the Windows SDK 7.1 to build wheel packages
-- Python 2.7 requires the Windows SDK 7.0
+- Python 3.12 and newer requires the Windows 11 SDK to build wheel packages
 - the aiotest module is required to run aiotest tests
 """
 import contextlib
@@ -24,7 +23,7 @@ import tempfile
 PROJECT = 'asyncio'
 DEBUG_ENV_VAR = 'PYTHONASYNCIODEBUG'
 PYTHON_VERSIONS = (
-    (3, 3),
+    (3, 11),
 )
 PY3 = (sys.version_info >= (3,))
 HG = 'hg'
