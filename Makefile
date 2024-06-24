@@ -1,4 +1,4 @@
-# Some simple testing tasks (sorry, UNIX only).
+# Some simple testing tasks (UNIX only we regret).
 
 PYTHON=python3
 VERBOSE=$(V)
